@@ -1,0 +1,41 @@
+/* --------------------------
+Reset default margin padding
+-------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* --------------------------
+Common Styles or Utilities
+-------------------------- */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* --------------------------
+Header & Navbar
+-------------------------- */
+header {
+  padding: 87px 0 0 12px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .logo h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.nav-items ul {
+  display: flex;
+  list-style: none;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  margin-left: 34px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #3a3a3a;
+}
