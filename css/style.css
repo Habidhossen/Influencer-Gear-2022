@@ -5,17 +5,22 @@ Reset default margin & padding
   margin: 0;
   padding: 0;
 }
+
 /* --------------------------
 Common Styles or Utilities
 -------------------------- */
 body {
   font-family: "Poppins", sans-serif;
 }
+.container {
+  margin: 100px 195px;
+}
+
 /* --------------------------
 Header & Navbar
 -------------------------- */
 header {
-  margin: 87px 120px;
+  margin: 75px 120px;
 }
 .navbar {
   display: flex;
@@ -39,6 +44,7 @@ header {
   line-height: 24px;
   color: #3a3a3a;
 }
+
 /* --------------------------
 Banner & Title
 -------------------------- */
@@ -73,6 +79,10 @@ Banner & Title
   color: white;
   font-weight: 700px;
 }
+
+/* --------------------------
+All Brand list
+-------------------------- */
 header hr {
   height: 1px;
   background: linear-gradient(
@@ -82,11 +92,90 @@ header hr {
     rgba(192, 204, 218, 0.1) 100%
   );
 }
-.other-brand {
+.all-brands {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .brand {
-  margin: 20px 0 20px 60px;
+  margin: 20px 30px 20px 30px;
   /* margin-left: 60px; */
+}
+
+/* --------------------------
+Popular Collection
+-------------------------- */
+.popular-collection-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.popular-collection-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 70px;
+  color: #3a3a3a;
+}
+.popular-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.product {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  /* width: 329px;
+  height: 476px; */
+  padding: 17px;
+}
+.product-cover {
+  width: 100%;
+}
+.product-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #18191f;
+  margin-top: 12px;
+}
+.product-price {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 6px 0;
+}
+.product-rating {
+  font-size: 16px;
+  color: #fb8200;
+}
+.product-rating span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #5e6366;
+  margin-left: 8px;
+}
+.product-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #787885;
+}
+.see-more-btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.see-more-btn a {
+  display: inline-flex;
+  align-items: center;
+  color: #e02c6d;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
 }
