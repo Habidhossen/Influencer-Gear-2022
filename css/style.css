@@ -48,6 +48,13 @@ header {
 .nav-items ul li a:hover {
   color: #e02c6d;
 }
+/* nav toggler */
+#nav-toggler {
+  display: none;
+}
+.nav-toggler-icon {
+  display: none;
+}
 
 /* --------------------------
 Banner & Title
@@ -292,8 +299,7 @@ Responsive with media-query
   }
   .navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
   }
@@ -311,6 +317,29 @@ Responsive with media-query
   .nav-items ul li a {
     font-size: 14px;
     font-weight: 500;
+    color: white;
+  }
+  .nav-items ul li a:hover {
+    color: #3a3a3a;
+  }
+  .nav-toggler-icon {
+    display: block;
+    font-size: 24px;
+  }
+  .navigation {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #e02c6d;
+    transform: translateY(-350px);
+    transition: 0.5s ease-in-out;
+  }
+  #nav-toggler:checked ~ .navigation {
+    transform: translateY(0);
   }
   .banner {
     margin: 80px 0;
