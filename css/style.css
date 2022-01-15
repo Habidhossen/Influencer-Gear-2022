@@ -313,8 +313,11 @@ Responsive with media-query
     list-style: none;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .nav-items ul li a {
+    margin: 0;
     font-size: 14px;
     font-weight: 500;
     color: white;
