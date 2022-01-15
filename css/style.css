@@ -285,10 +285,10 @@ Responsive with media-query
 /* Mobile Devices */
 @media screen and (max-width: 688px) {
   .container {
-    margin: 20px 16px;
+    margin: 20px;
   }
   header {
-    margin: 20px 16px;
+    margin: 20px;
   }
   .navbar {
     display: flex;
@@ -322,13 +322,14 @@ Responsive with media-query
     color: #3a3a3a;
   }
   .banner-desc {
-    margin: 15px 0;
+    margin: 20px 0;
     font-size: 14px;
     font-weight: 600;
     line-height: 21px;
     color: #3a3a3a;
   }
   .banner-left {
+    margin: 20px 0;
     text-align: center;
   }
   .banner-right img {
@@ -342,6 +343,9 @@ Responsive with media-query
   .brand {
     margin: 10px 10px;
   }
+  .popular-collection-title {
+    margin-top: 60px;
+  }
   .popular-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -350,7 +354,7 @@ Responsive with media-query
     grid-row-gap: 30px;
   }
   .bonus-part {
-    margin: 50px 16px;
+    margin: 70px 16px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
