@@ -43,8 +43,11 @@ header {
   font-weight: 600;
   line-height: 24px;
   color: #3a3a3a;
+  transition: 0.1s;
 }
-
+.nav-items ul li a:hover {
+  color: #e02c6d;
+}
 /* --------------------------
 Banner & Title
 -------------------------- */
@@ -78,8 +81,21 @@ Banner & Title
   font-size: 16px;
   color: white;
   font-weight: 700px;
+  border: 2px solid #e02c6d;
+  cursor: pointer;
+  transition: 0.4s;
 }
-
+.banner-btn:hover {
+  border: 2px solid #e02c6d;
+  color: #e02c6d;
+  background-color: transparent;
+}
+.banner-right img {
+  transition: transform 0.5s ease;
+}
+.banner-right img:hover {
+  transform: scale(1.2);
+}
 /* --------------------------
 All Brand list
 -------------------------- */
@@ -214,4 +230,9 @@ footer p {
   background: #22213c;
   color: white;
   margin: 17px 8px;
+  transition: 0.4s;
+}
+.social-icon .fab:hover {
+  background-color: white;
+  color: #e02c6d;
 }
