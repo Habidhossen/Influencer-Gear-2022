@@ -48,6 +48,7 @@ header {
 .nav-items ul li a:hover {
   color: #e02c6d;
 }
+
 /* --------------------------
 Banner & Title
 -------------------------- */
@@ -68,7 +69,7 @@ Banner & Title
   margin: 16px 0;
   font-size: 16px;
   font-weight: 600;
-  line-height: 24px x;
+  line-height: 24px;
   color: #3a3a3a;
 }
 .banner-btn {
@@ -96,6 +97,7 @@ Banner & Title
 .banner-right img:hover {
   transform: scale(1.2);
 }
+
 /* --------------------------
 All Brand list
 -------------------------- */
@@ -115,7 +117,6 @@ header hr {
 }
 .brand {
   margin: 20px 30px 20px 30px;
-  /* margin-left: 60px; */
 }
 
 /* --------------------------
@@ -276,4 +277,144 @@ footer p {
 .social-icon .fab:hover {
   background-color: white;
   color: #e02c6d;
+}
+
+/* --------------------------
+Responsive with media-query
+-------------------------- */
+/* Mobile Devices */
+@media screen and (max-width: 688px) {
+  .container {
+    margin: 20px 16px;
+  }
+  header {
+    margin: 20px 16px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .navbar .logo h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .nav-items ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner {
+    margin: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+  .banner-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #3a3a3a;
+  }
+  .banner-desc {
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #3a3a3a;
+  }
+  .banner-left {
+    text-align: center;
+  }
+  .all-brands {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .brand {
+    margin: 10px 10px;
+  }
+  .popular-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 9;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .bonus-part {
+    margin: 50px 16px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+  .bonus-left-side h1 {
+    font-size: 24px;
+    color: #3a3a3a;
+  }
+  .bonus-left-side {
+    text-align: center;
+  }
+}
+/* Tablet Devices */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    margin: 30px;
+  }
+  header {
+    margin: 20px;
+  }
+  .nav-items ul li a {
+    margin-left: 20px;
+  }
+  .banner {
+    margin: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+  .banner-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #3a3a3a;
+  }
+  .banner-desc {
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #3a3a3a;
+  }
+  .all-brands {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .brand {
+    margin: 10px 10px;
+  }
+  .popular-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .bonus-part {
+    margin: 50px 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+  .bonus-left-side h1 {
+    font-size: 24px;
+    color: #3a3a3a;
+  }
 }
