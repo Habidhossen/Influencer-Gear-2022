@@ -331,6 +331,9 @@ Responsive with media-query
   .banner-left {
     text-align: center;
   }
+  .banner-right img {
+    width: 100%;
+  }
   .all-brands {
     display: flex;
     justify-content: center;
