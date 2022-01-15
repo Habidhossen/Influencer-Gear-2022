@@ -179,3 +179,39 @@ Popular Collection
   font-size: 16px;
   line-height: 24px;
 }
+
+/* --------------------------
+Footer
+-------------------------- */
+footer {
+  height: 250px;
+  background-color: #0a0826;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 3px 0;
+}
+.social-icon .fab {
+  padding: 12px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #22213c;
+  color: white;
+  margin: 17px 8px;
+}
